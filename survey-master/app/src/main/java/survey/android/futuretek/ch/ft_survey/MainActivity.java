@@ -81,6 +81,7 @@ public class MainActivity extends BaseActivity {
                     userName = null;
                     try {
                         String aux = getDatabase().get("usersName");
+                        //added for question 1
                         if (aux != null && !aux.isEmpty()){
                             userName = aux;
                         } else
@@ -116,6 +117,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void activateNextButton(){
+        //Altered for question 2
         String aux = getDatabase().get("usersName");
         if (aux != null && !aux.isEmpty()){
             Button nextBtn = ((Button) findViewById(R.id.nextBtn));

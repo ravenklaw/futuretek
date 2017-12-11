@@ -1,0 +1,9 @@
+Release Document
+
+1. Correction of the insertion of the name in the application - Classes altered MainActivity.java 
+2. Correction of the activation of the next button if no name is given - Classes altered MainActivity.java
+3. Insertion in the Database of the new skill value "Software Developer" - Classes altered BaseActivity.java
+4. Start to make the edit button to edit the skill values.
+	- Added the new button in the xml class list_row.xml but not working perfectly
+	- Added the new button in the class SkillsActivity.java
+	- All this new code is commented to not disturb the normal funcionality of the technology

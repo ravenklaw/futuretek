@@ -80,6 +80,7 @@ public class SkillsActivity extends BaseActivity {
                 viewHolder = new ViewHolder();
                 viewHolder.textView = (TextView) convertView.findViewById(R.id.textView1);
                 viewHolder.delBtn = (Button) convertView.findViewById(R.id.deleteBtn);
+                //viewHolder.editBtn = (Button) convertView.findViewById(R.id.editBtn);
                 viewHolder.delBtn.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         ViewGroup row = ((ViewGroup)v.getParent());
@@ -89,6 +90,15 @@ public class SkillsActivity extends BaseActivity {
                         adapter.notifyDataSetChanged();
                     }
                 });
+                //viewHolder.editBtn.setOnClickListener(new View.OnClickListener() {
+                  //  public void onClick(View v) {
+                    //    ViewGroup row = ((ViewGroup)v.getParent());
+                     //   String id = ((TextView)row.findViewById(R.id.textView1)).getText().toString();
+                      //  getDatabase().deleteSkill(id);
+                       // _productlist.remove(id);
+                        //adapter.notifyDataSetChanged();
+                    //}
+                //});
                 convertView.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) convertView.getTag();
@@ -101,6 +111,7 @@ public class SkillsActivity extends BaseActivity {
     private class ViewHolder {
         TextView textView;
         Button delBtn;
+        //Button editBtn;
 
     }
 
